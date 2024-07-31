@@ -1,0 +1,22 @@
+body{
+    margin:0
+}
+
+
+header{
+    text-align: left;
+    padding: 10px;
+    font-size: 50px;
+    font-family: Dosis;
+    font-weight: 900;
+    color: hsl(258, 100%, 35%);
+}
+@font-face {
+    font-family: "Dosis";
+    src: "Dosis.ttf"
+
+}
+.banner{
+
+    background-color: hsl(0, 0%, 7%);
+}
