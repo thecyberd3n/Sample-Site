@@ -82,33 +82,37 @@ header{
     transform: translateY(40px);
 }
 .why-us {
+    display: inline-block;
     padding: 20px;
-    margin: 20px;
     text-align: left;
     font-weight: 500;
     font-family: Dosis;
     font-size: 25px;
     color: hsl(258, 100%, 35%);
-    width: 50%;
+    width: 20%;
+    animation: widthslide ease-in-out 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    overflow: hidden;    
+}
+.services {
+    display: inline-block;
+    padding: 20px;
+    text-align: left;
+    font-weight: 500;
+    font-family: Dosis;
+    font-size: 25px;
+    color: hsl(258, 100%, 35%);
+    width: 20%;
     height: auto;
     animation: widthslide ease-in-out 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    
+    overflow: hidden;    
 }
 @keyframes widthslide{
-    from{width: 100%}
-
+    to{width: 40%}
 }
-#whyus{
-    display: inline-block;
-}
-#services{
-    display: inline-block;
-}
-
-
-
 .footer {
     text-align: center;
     font-family: Dosis;
@@ -118,4 +122,19 @@ header{
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+.projects{
+    font-family: Dosis;
+    text-align: center;
+    margin: 10px;
+    float: left;
+    background-color: hsl(258, 100%, 35%);
+    width: 30%;
+    height: 50%;
+    border-radius: 5px;
+}
+html, body, .container{
+    height: 100%; 
+    min-height: 100%;
 }
